@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Intro"
+title:  "Time Travel"
 date:   2015-01-20 10:00:45
-categories: intro
+categories: time-travel
 ---
 
 I will *almost* any movie with one of the following.
