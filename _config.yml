@@ -10,3 +10,4 @@ timezone: MST
 
 # Build settings
 markdown: kramdown
+excerpt_separator: <!--- excerpt -->
