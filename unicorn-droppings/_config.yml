@@ -1,0 +1,12 @@
+# Site settings
+title: Unicorn Droppings
+email: pipermerriam@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  I'm not really sure what to put here yet....
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://pipermerriam.github.io" # the base hostname & protocol for your site
+github_username:  pipermerriam
+timezone: MST
+
+# Build settings
+markdown: kramdown
