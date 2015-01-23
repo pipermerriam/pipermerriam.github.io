@@ -11,7 +11,10 @@ I will *almost* any movie with one of the following.
 - Artificial Intelligence
 - [Grey Goo][grey-goo]
 
-I watched [Time Lapse][time-lapse] recently and couldn't help but wish that more content creators wrote [Level 1 Intelligent Characters][level-1-intelligent-characters].<!--- excerpt -->  Ever since reading about the concept I can't stop seeing the stupid, plot advancing, illogical actions in the various shows and movies I consume.
+I watched [Time Lapse][time-lapse] recently and couldn't help but wish that
+more content creators wrote [Level 1 Intelligent Characters][level-1-intelligent-characters].
+Ever since reading about the concept I can't stop seeing the stupid, plot
+advancing, illogical actions in the various shows and movies I consume.
 
 > *"Reading good fiction is like making the jump from masturbation to sex."* - Stephen King
 
