@@ -32,7 +32,7 @@ The cubes themselves are made up of 3 different types of panels.  And the
 panels themselves are made of of a total of 7 different sizes of 1/2 inch
 plywood and 2 x 2.
 
-![Speleobox Parts]({{ site.url }}/assets/speleobox-parts.jpg)
+![Speleobox Parts]({{ site.url }}/assets/speleobox-parts.png)
 
 When I was starting to come up with designs, one of the first things I did was
 figure out a path through the cube.  It took me the better part of an hour with
