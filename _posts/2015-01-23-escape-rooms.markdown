@@ -2,7 +2,9 @@
 layout: post
 title:  "Escape Rooms"
 date:   2015-01-23 12:00:00
-categories: puzzles, escape-room
+categories:
+  - puzzles
+  - escape-room
 ---
 
 Up until about 2 months ago I had never heard of an [escape room][escape-room].
