@@ -1,0 +1,41 @@
+---
+layout: post
+title:  "Hackday"
+date:   2015-01-31 10:00:45
+categories:
+  - javascript
+  - simpleenergy
+---
+
+My [company][simpleenergy] hosted a company hack day on Thursday.  Our team put
+together an app for tracking our bughouse games.  It was a really cool
+opportunity to indulge my recent love of javascript.
+
+I put together a frontend with [backbone][backbone] + [marionette][marionette]
++ [handlebars][handlebars].  I'd recently cut my teeth on a prototype for
+a one-page-checkout in an ecommerce solution I've been working on.  I've done a
+reasonable amount of front end in my career, and every time, it's been a
+garbled mess of unmaintainable junk.
+
+This time was different.
+
+I've been working within the high castle walls of [Django][django] for the
+majority of my career.  Each time, I would begin with a pre-rendered page,
+returned by the server and try to slap some javascript onto the page and turn
+it into an application.  It wasn't until this this past few weeks that I
+realized that my previous pain and failures came out of my unwillingness to
+shift enough of the programming and logic to the front end.
+
+I'm currently only two apps in, but so far, I am loving it.  A whole world of
+possibility has just opened up to me, and I'm excited to see where it leads.
+
+Oh, and we won the "Best Overall" title for the hackday projects.  You can find
+the sourcecode [here][bugsport].
+
+
+[simpleenergy]: http://simpleenergy.com/
+[backbone]: http://backbonejs.org/
+[marionette]: http://marionettejs.com/
+[handlebars]: http://handlebarsjs.com/
+[django]: https://www.djangoproject.com/
+[bugsport]: https://github.com/simpleenergy/bughouse-ranking
