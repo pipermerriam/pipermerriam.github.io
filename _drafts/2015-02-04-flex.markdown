@@ -1,0 +1,57 @@
+---
+layout: post
+title:  "Flex 3.0.0"
+date:   2015-02-04 10:00:45
+categories:
+  - flex
+  - python
+  - swagger
+---
+
+[flex][flex] is a library I began writing months ago.  We had a REST API that
+needed documenting, and after a bit of research, [swagger][swagger] rose to the
+top as the best option.
+
+For those who are not familiar with it, Swagger is a specification for
+describing a REST API.  It provide mechanisms for declaring where your api
+lives, versioning, endpoints, parts of the request (headers, query parameters,
+form data), parts of the response (status codes, headers, etc), and much much
+more.  This declarative format is extremely powerful, if not a little hard to
+become familiar with.
+
+The official [Swagger Specification][swagger-spec] is a long and detailed read.
+If you aren't already intimately familiar with it, you'd need to also dive into
+the [json-schema spec][json-schema] to really wrap your head around how to
+specify all of the parts of your API.  However, once you have your API
+declared, there are some very powerful things that you can do with this
+information.
+
+At the time that I was diving into swagger, testing was my primary concern.  I
+needed a way to both document the API for a 3rd party to consume, as well as
+some form of automated verification that the API conformed to the specification
+that the documentation claimed.
+
+I realized that given the data from the request/response cycle of an API call,
+and the swagger spec for the API, that I had all of the information needed to
+validate that the API call conformed to the specification.
+
+
+```python
+>>> import requests
+>>> import flex
+>>> response = requests.get("http://example.com/api/comments/")
+>>> swagger_schema = flex.load("/path/to/my/schema.json")
+>>> flex.validate_api_call(schema=swagger_schema, raw_request=response.request, raw_response=response) 
+Invalid
+  'response':
+         - 'Request status code was not found in the known response codes.  Got `301`: Expected one of: `[200]`'
+```
+
+This sort of validation can act as a very strong *glue* to keep your
+documentation in sync with your code.
+
+
+[flex]: https://github.com/pipermerriam/flex
+[swagger-spec]: https://github.com/swagger-api/swagger-spec/blob/master/versions/2.0.md
+[swagger]: http://swagger.io/
+[json-schema]: http://json-schema.org/latest/json-schema-validation.html
