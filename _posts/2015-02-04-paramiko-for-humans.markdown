@@ -21,7 +21,7 @@ add the host key if it's missing when trying to connect.
 Or you could jump through these ridiculous hoops, assuming you have the host
 key as a string and you want to use it to verify the connection.
 
-```python
+{% highlight python %}
 import paramiko
 import tempfile
 import base64
@@ -41,7 +41,7 @@ f.flush()
 c = paramiko.SSHClient()
 c.load_host_keys(f.name)
 c.connect(h, username="username", password="password")
-```
+{% endhighlight %}
 
 Wow!
 
