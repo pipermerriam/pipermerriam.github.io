@@ -10,7 +10,7 @@ In my recent dive into the Rails world I found myself writing some tests
 checking that certain emails were being delivered.  Conventional wisdom
 suggested I write my tests to look something like this.
 
-```ruby
+<pre><code class="language-ruby">
 RSpec.describe User, type: [:model, :mailer] do
 describe User do
   let(:user) { User.make }
@@ -21,7 +21,7 @@ describe User do
     }.by(1)
   end
 end
-```
+</code></pre>
 
 This was all fine and good until I tried to be a bit more specific in my test
 and adjusted one of them to look something like the following.
