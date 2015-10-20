@@ -3,8 +3,6 @@ layout: post
 title:  "Testing mail delivery (in rails) with RSpec the right way"
 date:   2015-10-20 00:00:00
 categories:
-  - ruby
-  - rails
   - testing
 ---
 
