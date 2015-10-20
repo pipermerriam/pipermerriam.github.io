@@ -26,7 +26,7 @@ end
 This was all fine and good until I tried to be a bit more specific in my test
 and adjusted one of them to look something like the following.
 
-```ruby
+{% highlight ruby %}
 describe User do
   let(:user) { User.make }
   let(:expected_subject) { "Welcome to the site!" }
@@ -39,7 +39,7 @@ describe User do
     expect(subjects).to include expected_subject
   end
 end
-```
+{% endhighlight %}
 
 Here I sanity check prior to sending the mail that it doesn't somehow exist
 within the deliveries, and then see that it has appeared after calling
@@ -52,7 +52,7 @@ With this change, my tests started failing at the pre-check.  Turns out that
 around for a way to deal with this, conventional wisdom said to do just clear
 it in the before (or after) each test with something like the following.
 
-```ruby
+{% highlight ruby %}
 # spec_helper.rb
 
 RSpec.configure do |config|
@@ -60,7 +60,7 @@ RSpec.configure do |config|
     ActionMailer::Base.deliveries.clear
   end
 end
-```
+{% endhighlight %}
 
 This seems like such a common thing it's hard to believe that you have to do
 this manually in every project.  Turns out you don't.  You can instead use the
@@ -68,11 +68,11 @@ rspec spec type of `:mailer` in your tests, and rspec will do the clearing for
 you.
 
 
-```ruby
+{% highlight ruby %}
 RSpec.describe User, type: [:mailer] do
   ... your tests
 end
-```
+{% endhighlight %}
 
 `ActionMailer::Base.deliveries` wil be cleared for you before (or maybe after?)
 each test.  Happy testing.
